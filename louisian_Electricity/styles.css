@@ -43,9 +43,7 @@ button{
     border-radius: 6px;
     font-size: 16px;
     font-family: 'Forum', serif;
-
 }
-
 #peakHour{
     display: flex;
    justify-content: space-around;
@@ -60,9 +58,7 @@ background-color: none;
     border-radius: 9px;
     padding-top: 30px;
     text-align: center;
-
 }
-
 #offPeakHour{
     width: 50%;
     height: 50px;
