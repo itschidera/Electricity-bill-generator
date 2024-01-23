@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Cormorant+Garamond:wght@300&family=Forum&family=Genos:wght@100&family=Tektur&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div>
+       <h1>Electricity Bill Calculator</h1>
+<main>
+    <div>
+        <label for="">Enter Kw/H used during On-Peak Hours</label>
+        <input id="inputOne" type="text" placeholder="Enter on-peak hours" value="">
+
+        <label for="">Enter Kw/H used during Off-Peak Hours</label>
+        <input id="inputTwo" type="text" placeholder="Enter off-peak hours" value="">
+    </div>
+    <div>
+       <label for="">Province of Residence</label> 
+        <select name="" id="provinces">
+            <option value="British">British Coloumbia</option>
+            <option value="Ontario"> Ontario</option>
+        </select>
+    </div>
+    <button id="calculateButton">Calculate</button>
+</main>
+    <div id="peakHour">
+        <p id="onPeakHour"></p>
+        <p id="offPeakHour"></p>
+    </div>
+        <div id="bills">
+            <p id="grossCharge"></p>
+            <p id="hstCharges"></p>
+            <p id="rebateValue"></p>
+            <p id="netValue"></p>
+        </div>
+     </div>
+
+    
+<script src="app.js"></script>
+</body>
+</html>

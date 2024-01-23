@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+body{
+    font-family: 'Forum', serif;
+    width: 400px;
+    margin: 50px auto;
+    background-color: black;
+    color:floralwhite;
+}
+label{
+    font-size: 16px;
+   
+}
+input{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+#inputOne{
+    margin-bottom: 30px;
+}
+#inputTwo{
+    margin-bottom: 30px;
+}
+select{
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+}
+p{
+    font-size: 16px;
+}
+#calculateButton{
+    width:100% ;
+    height: 35px;
+}
+button{
+    margin-top: 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Forum', serif;
+
+}
+
+#peakHour{
+    display: flex;
+   justify-content: space-around;
+}
+#bills{
+background-color: none;
+}
+
+#onPeakHour{
+    width: 50%;
+    height: 50px;
+    border-radius: 9px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+#offPeakHour{
+    width: 50%;
+    height: 50px;
+    border-radius: 9px;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+#netValue{
+    height: 50px;
+    border-radius: 9px;
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 30px;  
+}
