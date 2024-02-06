@@ -30,22 +30,18 @@ const buttonClicked =()=>{
     const hstValue = Math.floor(grossConsumption) * 0.13;
     console.log(hstValue)
     
+    // declare variables for the rebate and net consumption charges
+    let rebateValue = 0 
+    let netConsumptionCharges = 0
     
+    if (provinceDropDown === "British") {
+      rebateValue = Math.floor (grossConsumption * 0.08);
+      netConsumptionCharges = Math.floor(grossConsumption + hstValue) - rebateValue;
+    } else if (provinceDropDown === "Ontario") {
+      rebateValue = grossConsumption * 0.0;
+      netConsumptionCharges =Math.floor (grossConsumption + hstValue) - rebateValue;
+    }
     
-    const { rebateValue, netConsumptionCharges } = (function () {
-        if (provinceDropDown === "British") {
-          const rebateValue = Math.floor (grossConsumption * 0.08);
-          const netConsumptionCharges = Math.floor(grossConsumption + hstValue) - rebateValue;
-          return { rebateValue, netConsumptionCharges };
-    
-        } else if (provinceDropDown === "Ontario") {
-          const rebateValue = grossConsumption * 0.0;
-          const netConsumptionCharges =Math.floor (grossConsumption + hstValue) - rebateValue;
-          return { rebateValue, netConsumptionCharges };
-        }
-        return {};
-      })();
-      
       // Now you can access rebateValue and netConsumptionCharges outside of the if-else block
       console.log("Rebate Value:", rebateValue);
       console.log("Net Consumption Charges:", netConsumptionCharges);
